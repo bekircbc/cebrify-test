@@ -2,9 +2,17 @@ import pkg from "cebrify";
 
 import data from "./data/data.js";
 
-const { calcBMI, toggler, averageRatingCalc, exchangeRate } = pkg;
+const {
+  calcBMI,
+  togglerStatus,
+  togglerBoolean,
+  averageRatingCalc,
+  exchangeRate,
+} = pkg;
 
-console.log(pkg.toggler("see", "development", "see"));
+console.log(pkg.togglerStatus("see", "development", "see"));
+
+console.log(pkg.togglerBoolean(true));
 
 console.log(pkg.calcBMI(76, 1.72));
 
